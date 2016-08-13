@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://enk4.github.io/"/>
-  <updated>2016-08-13T14:59:11.710Z</updated>
+  <updated>2016-08-13T15:04:09.740Z</updated>
   <id>http://enk4.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/"/>
     <id>http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/</id>
     <published>2016-08-13T13:52:16.000Z</published>
-    <updated>2016-08-13T14:59:11.710Z</updated>
+    <updated>2016-08-13T15:04:09.740Z</updated>
     
     <content type="html"><![CDATA[<p>I have ranted about why I migrate to Hexo. Now let’s talk about technical.<br><a id="more"></a></p>
 <p>I do realise that there are already many people who create this kind of tutorial, so I intend to make one that categorised as ‘Dummy’ tutorial for people who aren’t even familiar with git yet. So yeah, this tuts is for windows user.</p>
@@ -35,7 +35,7 @@
 <p>You don’t need to really understand how they are doing, it helps, but not necessary. Also ensure that you know how to access powershell or cmd.</p>
 <h3 id="First-phase-github-page-creation"><a href="#First-phase-github-page-creation" class="headerlink" title="First phase - github page creation"></a>First phase - github page creation</h3><p>The first step is to prepare your environment. After installing Git and NodeJS, we need to configure them first. NodeJS not really need configuration so just left it there. But you do need to configure git.</p>
 <p>It doesn’t matter whether you want to use SSH key or use https to connect to github. But it does matter that you connect it.</p>
-<p>After finish configuring your PC so it can connect to github, you need to create the repository of the page. Create new repository with repo name ‘<your github="" username="">.github.io’. My username is enk4, so my github page repo named enk4.github.io. Get it right, then let’s go to phase 2.</your></p>
+<p>After finish configuring your PC so it can connect to github, you need to create the repository of the page. Create new repository with repo name ‘{your github username}.github.io’. My username is enk4, so my github page repo named enk4.github.io. Get it right, then let’s go to phase 2.</p>
 <div class="alert warning"><p>You don’t need to clone the repository to your PC.</p>
 </div>
 <h3 id="Second-phase-hexo-installation"><a href="#Second-phase-hexo-installation" class="headerlink" title="Second phase - hexo installation"></a>Second phase - hexo installation</h3><p>Now let’s go to hexo installation.</p>
@@ -51,7 +51,7 @@
 <h3 id="Third-phase-configuration"><a href="#Third-phase-configuration" class="headerlink" title="Third phase - configuration"></a>Third phase - configuration</h3><p>Open file ‘_config.yml’ that is located at the root of your blog. This file contains all configuration of your hexo blog. There are several part that you might want to edit right away:<br>}</p>
 <ul>
 <li>Site: update title, subtitle, description and author to your liking, however, keep the language by language you mainly used and the UI language you wish for the blog.</li>
-<li>URL: change the url to https://<your github="" username="">.github.io, left everything else as it is.</your></li>
+<li>URL: change the url to <a href="https://{your" target="_blank" rel="external">https://{your</a> github username}.github.io, left everything else as it is.</li>
 <li>Deployment. Edit the configuration so they are match this:</li>
 </ul>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repo:</span> &lt;repository url<span class="string">&gt;</span></div></pre></td></tr></table></figure>
@@ -59,7 +59,7 @@
 </div>
 <h3 id="Fourth-phase-Deployment"><a href="#Fourth-phase-Deployment" class="headerlink" title="Fourth phase - Deployment"></a>Fourth phase - Deployment</h3><p>Now it’s time to deploy the Hexo we have configured and installed locally. To do so, you only need to invoke these commands at PowerShell or command prompt:</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<p>And yes, you are done! You can check open <your github="" username="">.github.io at your browser to make sure it is working.</your></p>
+<p>And yes, you are done! You can check open {your github username}.github.io at your browser to make sure it is working.</p>
 <h3 id="Next-work"><a href="#Next-work" class="headerlink" title="Next work"></a>Next work</h3><p>Success in deploying hexo web is not the last of work you need to make your blog live. If you feels the default theme is not your style, there are plenty of theme out there that you can try. Also don’t forget to learn how to write a post at hexo since there is no administrative page in vanilla hexo. It is available as plugin tough, so if you <strong>do</strong> mind to use CLI at your own computer everytime you blog, feel free to install the plugin from <a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="external">here</a>. But please beware that this admin only works for posting. Configuration still need to be done by modifying the ‘_config.yml’ file.</p>
 <div class="alert info"><p>I’ll add <strong>FAQ</strong> later on to handle the ‘might-happened-problem’ solution.</p>
 </div>
