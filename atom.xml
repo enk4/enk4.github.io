@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://enk4.github.io/"/>
-  <updated>2016-08-09T13:25:01.693Z</updated>
+  <updated>2016-08-13T13:03:30.459Z</updated>
   <id>http://enk4.github.io/</id>
   
   <author>
@@ -17,28 +17,54 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://enk4.github.io/2016/08/09/hello-world/"/>
-    <id>http://enk4.github.io/2016/08/09/hello-world/</id>
-    <published>2016-08-09T13:25:01.693Z</published>
-    <updated>2016-08-09T13:25:01.693Z</updated>
+    <link href="http://enk4.github.io/2016/08/13/hello-world/"/>
+    <id>http://enk4.github.io/2016/08/13/hello-world/</id>
+    <published>2016-08-13T13:03:30.458Z</published>
+    <updated>2016-08-13T13:03:30.459Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<p>Don’t get distracted with the thumbnail!!!</p>
+<a id="more"></a>
+<p>Since the pre-created hello world post is boring, I decides to put a depiction of dragonborn and her faithful housecarl having afternoon chat with a snack in their living room. Enjoy it!</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Don’t get distracted with the thumbnail!!!&lt;/p&gt;
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>Migrating to Hexo</title>
+    <link href="http://enk4.github.io/2016/08/13/migrating-to-hexo/"/>
+    <id>http://enk4.github.io/2016/08/13/migrating-to-hexo/</id>
+    <published>2016-08-13T09:28:36.000Z</published>
+    <updated>2016-08-13T13:05:46.794Z</updated>
+    
+    <content type="html"><![CDATA[<p>It’s almost been 10 years since I started blogging. Since then I have been migrating all the time. I have used multiply, blogspot, wordpress, tumblr, and ghost. Different experience for each application <a id="more"></a> but for the same purpose, put my thought into written text.</p>
+<p>I began knowing Ghost at my last year at college. I and one of my colleague push the idea to make all assignment submission of our lab done by contributing into internal publishing using ghost. Since then I myself has been using ghost hosted at openshift for a while.</p>
+<p>So far using ghost was good. I can write my text in markdown which is super nice, the documentation is complete and the templates are easy to configure. Even the default template is really good. But what is technology but have downside? For myself, the downside is that I need to host it at working node.js environment, which means environment that allow exec.And for ‘not so blogger’ as myself, I don’t want my resources to go for those.</p>
+<p>After that I meet github page, which supports jekyll. Tried it, don’t get the feel, and go back to ghost. And now, I found out about hexo.</p>
+<p>When comparing ghost to hexo according to my need (my need doesn’t necessarily mean yours, so explore it folks!), I found out that hexo is more suitable for me. It can save my resources because github itself is free. It doesn’t even has administrator page as vanilla feature, which push me to do everything from VIM, and I love Vim, so I move.</p>
+<p>Easy to deploy, easy to create post, all I can do within Vim with additional of VimShell because everything are done by CLI. All the more reason why I switch. Therefore, there are several side down too as for now nearly everything regarding the post (thumbnail image, cover image, etc.) must be prepared first hand and can’t be configured once it get to server. But it was content problem, not really a problem for me.</p>
+<p>Oh and I used the tranquilpeak for the template. Thanks for the author, this template is amazing! All control within hand at it best!</p>
+<p>For those who are curious to try, find all about hexo <a href="https://hexo.io" target="_blank" rel="external">here</a>. Hope it can give you alternative of blogging platform!</p>
+<div class="alert info"><p>As a first official post, why not we play a bit with tags? :P</p>
+</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;It’s almost been 10 years since I started blogging. Since then I have been migrating all the time. I have used multiply, blogspot, wordpress, tumblr, and ghost. Different experience for each application
+    
+    </summary>
+    
+    
+      <category term="Technical" scheme="http://enk4.github.io/tags/Technical/"/>
+    
+      <category term="Exp" scheme="http://enk4.github.io/tags/Exp/"/>
     
   </entry>
   
