@@ -6,23 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="BA who still code">
-    <title>Migrating to Hexo - BA who still code</title>
+    <title>Migrating to Hexo - Technical - BA who still code</title>
     <meta name="author" content="Enk4~">
     
     
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="It’s almost been 10 years since I started blogging. Since then I have been migrating all the time. I have used multiply, blogspot, wordpress, tumblr, and ghost. Different experience for each applicati">
+    <meta name="description" content="I have ranted about why I migrate to Hexo. Now let’s talk about technical.">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Migrating to Hexo">
-<meta property="og:url" content="http://enk4.github.io/2016/08/13/migrating-to-hexo/index.html">
+<meta property="og:title" content="Migrating to Hexo - Technical">
+<meta property="og:url" content="http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/index.html">
 <meta property="og:site_name" content="BA who still code">
-<meta property="og:description" content="It’s almost been 10 years since I started blogging. Since then I have been migrating all the time. I have used multiply, blogspot, wordpress, tumblr, and ghost. Different experience for each applicati">
-<meta property="og:updated_time" content="2016-08-13T13:05:46.794Z">
+<meta property="og:description" content="I have ranted about why I migrate to Hexo. Now let’s talk about technical.">
+<meta property="og:updated_time" content="2016-08-13T14:59:11.710Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Migrating to Hexo">
-<meta name="twitter:description" content="It’s almost been 10 years since I started blogging. Since then I have been migrating all the time. I have used multiply, blogspot, wordpress, tumblr, and ghost. Different experience for each applicati">
+<meta name="twitter:title" content="Migrating to Hexo - Technical">
+<meta name="twitter:description" content="I have ranted about why I migrate to Hexo. Now let’s talk about technical.">
 <meta name="twitter:creator" content="@mutsuenka">
     
     
@@ -229,11 +229,11 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            Migrating to Hexo
+            Migrating to Hexo - Technical
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" datetime="2016-08-13T16:28:36+07:00">
+    <time itemprop="datePublished" datetime="2016-08-13T20:52:16+07:00">
 	
 		    Aug 13, 2016
     	
@@ -245,16 +245,48 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>It’s almost been 10 years since I started blogging. Since then I have been migrating all the time. I have used multiply, blogspot, wordpress, tumblr, and ghost. Different experience for each application <a id="more"></a> but for the same purpose, put my thought into written text.</p>
-<p>I began knowing Ghost at my last year at college. I and one of my colleague push the idea to make all assignment submission of our lab done by contributing into internal publishing using ghost. Since then I myself has been using ghost hosted at openshift for a while.</p>
-<p>So far using ghost was good. I can write my text in markdown which is super nice, the documentation is complete and the templates are easy to configure. Even the default template is really good. But what is technology but have downside? For myself, the downside is that I need to host it at working node.js environment, which means environment that allow exec.And for ‘not so blogger’ as myself, I don’t want my resources to go for those.</p>
-<p>After that I meet github page, which supports jekyll. Tried it, don’t get the feel, and go back to ghost. And now, I found out about hexo.</p>
-<p>When comparing ghost to hexo according to my need (my need doesn’t necessarily mean yours, so explore it folks!), I found out that hexo is more suitable for me. It can save my resources because github itself is free. It doesn’t even has administrator page as vanilla feature, which push me to do everything from VIM, and I love Vim, so I move.</p>
-<p>Easy to deploy, easy to create post, all I can do within Vim with additional of VimShell because everything are done by CLI. All the more reason why I switch. Therefore, there are several side down too as for now nearly everything regarding the post (thumbnail image, cover image, etc.) must be prepared first hand and can’t be configured once it get to server. But it was content problem, not really a problem for me.</p>
-<p>Oh and I used the tranquilpeak for the template. Thanks for the author, this template is amazing! All control within hand at it best!</p>
-<p>For those who are curious to try, find all about hexo <a href="https://hexo.io" target="_blank" rel="external">here</a>. Hope it can give you alternative of blogging platform!</p>
-<div class="alert info"><p>As a first official post, why not we play a bit with tags? :P</p>
+            <p>I have ranted about why I migrate to Hexo. Now let’s talk about technical.<br><a id="more"></a></p>
+<p>I do realise that there are already many people who create this kind of tutorial, so I intend to make one that categorised as ‘Dummy’ tutorial for people who aren’t even familiar with git yet. So yeah, this tuts is for windows user.</p>
+<p>What? Github is not for advanced developer only.</p>
+<p>So let’s start this.</p>
+<h3 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h3><p>There are several things that you need to prepare in order to implement hexo. These things are pure technical, so if you do mind technical and want to stay simple with system handle things, please see <a href="https://ghost.org" target="_blank" rel="external">ghost</a>.</p>
+<ol>
+<li>Git- <a href="https://git-scm.com" target="_blank" rel="external">Get it here</a> and you might want to learn it first <a href="try.github.io">here</a></li>
+<li>NodeJs - Just use the LTS version from it’s <a href="https://nodejs.org" target="_blank" rel="external">official website</a></li>
+<li>Github account - register at <a href="https://github.com" target="_blank" rel="external">https://github.com</a></li>
+</ol>
+<p>You don’t need to really understand how they are doing, it helps, but not necessary. Also ensure that you know how to access powershell or cmd.</p>
+<h3 id="First-phase-github-page-creation"><a href="#First-phase-github-page-creation" class="headerlink" title="First phase - github page creation"></a>First phase - github page creation</h3><p>The first step is to prepare your environment. After installing Git and NodeJS, we need to configure them first. NodeJS not really need configuration so just left it there. But you do need to configure git.</p>
+<p>It doesn’t matter whether you want to use SSH key or use https to connect to github. But it does matter that you connect it.</p>
+<p>After finish configuring your PC so it can connect to github, you need to create the repository of the page. Create new repository with repo name ‘<your github="" username="">.github.io’. My username is enk4, so my github page repo named enk4.github.io. Get it right, then let’s go to phase 2.</your></p>
+<div class="alert warning"><p>You don’t need to clone the repository to your PC.</p>
 </div>
+<h3 id="Second-phase-hexo-installation"><a href="#Second-phase-hexo-installation" class="headerlink" title="Second phase - hexo installation"></a>Second phase - hexo installation</h3><p>Now let’s go to hexo installation.</p>
+<p>To install hexo, open command prompt or PowerShell. There you need to move the working directory to specific folder where you want your blog to be created. Then enter this command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<p>Wait for the installation to be finished. You can ensure the installation has gone good by running this command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo --version</div></pre></td></tr></table></figure>
+<p>It shall return the version of installed hexo. Proceed to next step, run these commands:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init &lt;your github username&gt;.github.io</div><div class="line">cd &lt;your github username&gt;.github.io</div><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>This will install the hexo. You can run hexo locally if you want to see it by typing <code>hexo server</code>. Use ctrl+C to stop the server.</p>
+<p>Before proceeding to next phase, there is last thing you need to do, **installing hexo-deployer-git.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h3 id="Third-phase-configuration"><a href="#Third-phase-configuration" class="headerlink" title="Third phase - configuration"></a>Third phase - configuration</h3><p>Open file ‘_config.yml’ that is located at the root of your blog. This file contains all configuration of your hexo blog. There are several part that you might want to edit right away:<br>}</p>
+<ul>
+<li>Site: update title, subtitle, description and author to your liking, however, keep the language by language you mainly used and the UI language you wish for the blog.</li>
+<li>URL: change the url to https://<your github="" username="">.github.io, left everything else as it is.</your></li>
+<li>Deployment. Edit the configuration so they are match this:</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repo:</span> &lt;repository url<span class="string">&gt;</span></div></pre></td></tr></table></figure>
+<div class="alert warning"><p>Don’t forget to save the configuration file!</p>
+</div>
+<h3 id="Fourth-phase-Deployment"><a href="#Fourth-phase-Deployment" class="headerlink" title="Fourth phase - Deployment"></a>Fourth phase - Deployment</h3><p>Now it’s time to deploy the Hexo we have configured and installed locally. To do so, you only need to invoke these commands at PowerShell or command prompt:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<p>And yes, you are done! You can check open <your github="" username="">.github.io at your browser to make sure it is working.</your></p>
+<h3 id="Next-work"><a href="#Next-work" class="headerlink" title="Next work"></a>Next work</h3><p>Success in deploying hexo web is not the last of work you need to make your blog live. If you feels the default theme is not your style, there are plenty of theme out there that you can try. Also don’t forget to learn how to write a post at hexo since there is no administrative page in vanilla hexo. It is available as plugin tough, so if you <strong>do</strong> mind to use CLI at your own computer everytime you blog, feel free to install the plugin from <a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="external">here</a>. But please beware that this admin only works for posting. Configuration still need to be done by modifying the ‘_config.yml’ file.</p>
+<div class="alert info"><p>I’ll add <strong>FAQ</strong> later on to handle the ‘might-happened-problem’ solution.</p>
+</div>
+<p>Have fun experimenting with Hexo!</p>
 
             
         </div>
@@ -264,7 +296,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/Exp/">Exp</a> <a class="tag tag--primary tag--small t-link" href="/tags/Technical/">Technical</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/technical/">technical</a>
 
             </div>
         
@@ -273,7 +305,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/08/13/hello-world/"  data-tooltip="Hello World">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -281,7 +313,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/08/13/hello-world/" data-tooltip="Hello World">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -296,17 +328,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -344,7 +376,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/08/13/hello-world/"  data-tooltip="Hello World">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -352,7 +384,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/08/13/hello-world/" data-tooltip="Hello World">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -367,17 +399,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -397,17 +429,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="4">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://enk4.github.io/2016/08/13/migrating-to-hexo/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://enk4.github.io/2016/08/13/Migrating-to-Hexo-technical/">
                 <i class="fa fa-twitter"></i><span>Share on Twitter</span>
             </a>
         </li>
